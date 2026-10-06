@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oscar-mcp"
+version = "0.1.0"
+description = "An MCP server that gives AI assistants read-only access to OSCAR CPAP therapy data."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-or-later" }
+dependencies = ["mcp>=1.2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+oscar-mcp = "oscar_mcp.server:main"
+
+[tool.setuptools]
+packages = ["oscar_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
