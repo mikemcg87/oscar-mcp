@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "An MCP server that gives AI assistants read-only access to OSCAR CPAP therapy data."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "GPL-3.0-or-later" }
+license = { text = "MIT" }
 dependencies = ["mcp>=1.2"]
 
 [project.optional-dependencies]
